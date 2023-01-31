@@ -5,7 +5,7 @@ import stocks from "../data";
 export default function Stocks(props) {
   return (
     <div className="stocks">
-      <h2>Most Active Stocks</h2>
+      <h2>Most Active Stonks</h2>
       <div className="main-container">
         <div className="stocks-container">
           <p className="left-element">Company Name</p>
@@ -14,6 +14,7 @@ export default function Stocks(props) {
             <p className="right-element">Change</p>
           </div>
         </div>
+        <div className="border-line"></div>
 
         {props.stocks.map((stock) => (
           <div className="stocks-container" key={stock.symbol}>
